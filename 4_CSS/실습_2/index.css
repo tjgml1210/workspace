@@ -1,0 +1,169 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    /* border : 1px solid wheat; */
+    background-color: black;
+}
+
+.header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+
+.logo{
+    width: 20%;
+    height: 100%;
+}
+
+.logo img:nth-child(1){
+    height: 50%;
+    position: relative;
+    bottom: 23px;
+    left: 10px;
+
+}
+
+.logo img:nth-child(2){
+    height: 120%;
+    position: relative;
+    left: 70px;
+    bottom: 8px;
+}
+
+.search{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    
+}
+
+
+.search input[type="text"]{
+    width: 30%;
+    height: 80%;
+    border: 1px solid gray;
+    padding-left: 10px;
+    border-radius:50px 0 0 50px ;
+}
+
+.search-img{
+    outline: none;
+    border: 1px solid gray;
+    width: 10%;
+    height: 80%;
+    background: url(./images/search.svg) no-repeat center/contain;
+    background-color: rgb(37, 37, 37);
+    background-size: 20px 20px;
+    border-radius:0px 50px 50px 0px ;
+}
+
+.voice-img{
+    outline: none;
+    border: 1px solid gray;
+    width: 4%;
+    height: 70%;
+    background: url(./images/voice-search-icon.svg) no-repeat center/contain;
+    background-color: rgb(37, 37, 37);
+    background-size: 20px 20px;
+    border-radius: 50px;
+    margin-left: 20px;
+}
+
+.user{
+    
+    height: 100%;
+    padding-top: 20px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.user img{
+    float: right;
+    margin : 5px;
+}
+
+
+/* side */
+
+.side{
+    width:7%;
+    height: max-content;
+    color:white;
+    float: left;
+}
+.side div{
+    width:30%;
+    margin : 35px 20px;
+    text-align: center;
+}
+
+/* content */
+.content{
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px; 
+    padding: 10px;
+    margin-right: 20px;
+}
+
+
+
+.content img{
+    width: 98%; 
+    height: auto; 
+    display: block; 
+    margin-bottom: 10px; 
+    display: block;
+}
+
+.overlay {
+    position: absolute; 
+    bottom: 10px; 
+    right: 10px;
+    background-color: black; 
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px; 
+    font-size: 14px; 
+}
+
+
+.content img:nth-child(2){
+    width: 20%;
+}
+
+.content p {
+    color:white;
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+
+  .content p:nth-child(3) {
+    margin: 0; /* 텍스트의 기본 여백 제거 */
+    padding: 1px 1px; /* 텍스트 상하단 여백 */
+    color:rgb(163, 163, 163);
+    font-size: 12px;
+  }
+
+  .text{
+    width: 100%;
+  }
+
+  .text img{
+    width: 10%;
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 10px;
+  }
+
+  .text p{
+    font-size: 15px;
+  }

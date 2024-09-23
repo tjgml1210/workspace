@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    bottom: 0;
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+input[type="button"]{
+    display: block;
+    margin-left: 130px;
+}
+
+fieldset{
+    width: 760px;
+}
+
+.secondtable{
+    border: 1px solid black;
+}
+
+.secondtable > thead,tfoot{
+    background-color:rgb(255, 148, 109);
+    color:white;
+}
+
+.secondtable > thead th {
+    padding: 5px 0px;
+}
+
+.secondtable > tbody{
+    background-color:rgb(253, 242, 226);
+}
+
+.secondtable tbody td {
+    padding-right: 30px; 
+}
+
+.secondtable tbody td:nth-child(3) {
+    padding: 0;
+    
+}
+
+.secondtable tbody td:nth-child(2) {
+    padding-right: 200px;
+}
+
+.secondtable tbody td:nth-child(3) input[type="button"] {
+    margin: 0; 
+    padding:auto;
+    width: 100%; 
+    
+}

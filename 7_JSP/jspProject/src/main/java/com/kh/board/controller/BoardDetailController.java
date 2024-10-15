@@ -1,6 +1,7 @@
 package com.kh.board.controller;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import com.kh.board.model.vo.Attachment;
 import com.kh.board.model.vo.Board;
@@ -29,7 +30,7 @@ public class BoardDetailController extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		int boardNo = Integer.parseInt(request.getParameter("bno"));
+int boardNo = Integer.parseInt(request.getParameter("bno"));
 		
 		BoardService bService = new BoardService();
 		//조회수 1증가시키고 디테일 페이지정보 가져오기
@@ -46,6 +47,7 @@ public class BoardDetailController extends HttpServlet {
 			request.setAttribute("errorMsg", "게시글 조회 실패");
 			request.getRequestDispatcher("views/common/errorPage.jsp").forward(request, response);
 		}
+		
 	}
 
 	/**

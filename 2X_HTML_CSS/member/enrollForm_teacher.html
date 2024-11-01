@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부모님 회원가입</title>
+    <link rel="stylesheet" href="./css/enrollForm_teacher.css">
+</head>
+<body>
+    <div id="enrollForm-box">
+        <div id="enroll-logo">
+            <img src="../common/img/logo.png">
+        </div>
+        <div id="enroll-bar">
+            선생님 회원가입
+        </div>
+
+        <div id="enrollForm-form">
+            <form action="">
+                <div id="enroll-type">
+                    <input type="radio" id="teacher" name="choice" value="manager" checked>
+                    <label for="manager">선생님</label>
+                    <input type="radio" id="manager" name="choice" value="teacher">
+                    <label for="teacher">관리자</label>
+                </div>
+                <div id="enroll-find">
+                    <p>학교찾기</p>
+                    <input type="text" placeholder="학교코드 입력" autofocus>
+                    <input type="button" value="학교찾기">
+                </div>
+                <div id="enroll-name">
+                    <p>이름</p>
+                    <input type="text" placeholder="이름을 입력하세요." autofocus>
+                </div>
+                <div id="enroll-id">
+                    <p>아이디</p>
+                    <input type="text" placeholder="아이디를 입력하세요." autofocus>
+                    <input type="button" value="중복확인">
+                </div>
+                <div id="enroll-pwd">
+                    <p id="enroll-pwd-p">비밀번호</p>
+                    <input type="text" placeholder="비밀번호를 입력하세요." autofocus>
+                </div>
+                <div id="enroll-pwd">
+                    <p>비밀번호 확인</p>
+                    <input type="text" placeholder="이름을 입력하세요." autofocus>
+                </div>
+                <div id="enroll-phone">
+                    <p>전화번호</p>
+                    <input type="text" placeholder="(-)제외하고 입력 ex)01011112222" autofocus>
+                </div>
+                <div id="enroll-btn">
+                    <input type="button" value="회원가입">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
